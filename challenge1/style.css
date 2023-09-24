@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100;1,500;1,900&display=swap");
+
+body {
+  background-color: rgb(68, 27, 107);
+}
+
+.center {
+  text-align: center;
+}
+
+.harry {
+  font-family: "Great Vibes", cursive;
+  font-size: 60px;
+  color: white;
+}
