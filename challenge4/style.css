@@ -1,39 +1,51 @@
 /* Add your code in each class */
-body {
+* {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 .container {
-  background-color: rgb(48, 15, 51);
+  background-color: rgb(43, 9, 48);
+  width: 100vw;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.movie-card {
+  background-color: beige;
+  width: 250px;
+
+  height: 250px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.movie-card {
-  /* background: "/assets/harrypotter.jpg"; */
-  background-color: aqua;
-  width: 200px;
-  height: 300px;
-  object-fit: cover;
-  object-position: 80% 100%;
-}
 .movie-image {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: space-around;
-  width: 40vh;
-  height: 40vh;
-  position: relative;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  object-fit: cover;
+  object-position: top;
 }
 .movie-details-container {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
 }
 .descriptions {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 100%;
   color: white;
 }
 
@@ -43,6 +55,8 @@ body {
     This gradient was made by this website https://cssgradient.io/
 */
   position: absolute;
+  top: 0;
+  z-index: -1;
   height: 100%;
   width: 100%;
   background: rgb(0, 0, 0);
@@ -53,7 +67,6 @@ body {
   );
 }
 .movie-title {
-  font-weight: 900;
-  color: white;
-  position: absolute;
+  /* position: absolute;
+  z-index: 2; */
 }
